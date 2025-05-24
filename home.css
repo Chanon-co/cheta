@@ -1,3 +1,18 @@
+body {
+    display: block;
+    justify-content: centers;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: #333;
+    background-image: linear-gradient(rgba(197, 197, 197, 0.281) .1em, transparent .1em), linear-gradient(90deg, rgba(197, 197, 197, 0.281) .1em, transparent .1em);
+    background-size: 3em 3em;
+    color: antiquewhite;
+    font-family: "Cascadia Code", sans-serif;
+    font-optical-sizing: auto;
+    
+}
+
 /* keyframes */
 @keyframes rainbowText {
   0%   { color: #000000; }    /* ดำ */
@@ -50,21 +65,6 @@
 }
 /* keyframes */
 
-body {
-    display: block;
-    justify-content: centers;
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    background: #333;
-    background-image: linear-gradient(rgba(197, 197, 197, 0.281) .1em, transparent .1em), linear-gradient(90deg, rgba(197, 197, 197, 0.281) .1em, transparent .1em);
-    background-size: 3em 3em;
-    color: antiquewhite;
-    font-family: "Cascadia Code", sans-serif;
-    font-optical-sizing: auto;
-    
-}
-
 .parent {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -77,7 +77,7 @@ body {
 
 
 .profile p {
-    animation: colorChange 2s infinite; /* ทำให้ข้อความเปลี่ยนสี */
+    animation: rainbowText 2s infinite; /* ทำให้ข้อความเปลี่ยนสี */
 }
 
 .profile {
@@ -89,7 +89,6 @@ body {
     position: sticky;
     top: 0; /* ให้ติดอยู่ด้านบน */
     background-color: #333;
-    box-shadow: #1f1f1f 0px 0px 10px;
     
     p , span {
         margin: 0; /* ลบระยะขอบบนล่าง */
@@ -99,11 +98,6 @@ body {
 
 .hight-profile {
     grid-area: 2 / 1 / 4 / 7;
-    background-color: #797979;
-    z-index: -2;
-    box-shadow: #333 0px 0px 10px;
-    position: relative;
-    overflow: hidden;
 }
 
 .background img{
@@ -121,28 +115,16 @@ body {
     margin-left: 20px;
     margin-top: 150px;
     border: 3px solid;
-    animation: rainbowBorder 5s linear infinite; /* ทำให้ข้อความเปลี่ยนสี */
+    animation: rainbowBorder 2s linear infinite; /* ทำให้ข้อความเปลี่ยนสี */
 }
 
 #name {
-    font-size: 30px;
-    text-shadow: #1f1f1f 0px 0px 10px;
+    font-size: 25px;
+
 }
 
 .profile-text {
-    margin: 0 10px;
-    padding: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-#like {
-    width: 70px;
-    height: 50px;
-    border-radius: 5px;
-    margin-right: 10px;
-    font-family: ;
+    margin: 10px;
 }
 
 
@@ -151,17 +133,12 @@ body {
     display: flex;
     flex-direction: column;
     margin: 10px;
-    margin-top: 20px;
+    margin-top: 30px;
     gap: 30px;
 }
 
 .about-me span {
     white-space: pre-line;
-    font-size: 16px;
-}
-
-#About {
-    font-size: 20px;
 }
 
 .skill {
@@ -175,7 +152,7 @@ body {
 
 .skills-list li {
     list-style: none;
-    display: inline-block;
+    display: block;
 }
 
 .skills-list li img {
