@@ -1,0 +1,189 @@
+:root {
+    /* Font */
+    --font-family: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
+
+    /* Colors */
+    --color-bg: #292929;
+    /* พื้นหลังดำสนิท */
+    --color-bg-light: #141414;
+    /* พื้นหลังโทนสว่างกว่านิด */
+    --color-text: #b9fbc0;
+    /* เขียวอ่อนเรืองๆ */
+    --color-text-muted: #94e2c4;
+    /* เขียวอ่อนอีกรูปแบบ */
+    --color-accent: #00ff88;
+    /* เขียวสดแบบ terminal */
+    --color-white: #ffffff;
+    --color-gray: #888888;
+    --color-bt: #444444;
+    /* ปุ่มสีเทาเข้ม */
+    --color-bt-hover: #555555;
+    /* ปุ่มสีเทาอ่อนเมื่อ hover */
+    --color-bt-active: #666666;
+    /* ปุ่มสีเทาอ่อนมากเมื่อ active */
+    --color-bt-text: #ffffff;
+    /* ข้อความบนปุ่มสีขาว */
+    --color-bt-text-hover: #ffffff;
+    /* ข้อความบนปุ่มสีขาวเมื่อ hover */
+    --color-bt-text-active: #ffffff;
+    /* ข้อความบนปุ่มสีขาวเมื่อ active */
+    --color-bt-border: #333333;
+    /* กรอบปุ่มสีเทาเข้ม */
+    --color-bt-border-hover: #444444;
+    /* กรอบปุ่มสีเทาอ่อนเมื่อ hover */
+    --color-bt-border-active: #555555;
+    /* กรอบปุ่มสีเทาอ่อนมากเมื่อ active */
+    --color-bt-shadow: rgba(0, 0, 0, 0.2);
+    /* เงาป
+
+  /* Border / UI */
+    --border-radius: 6px;
+    --border-nv: 100%;
+    --border-color: #444444;
+    /* สีกรอบ */
+    --border-color-light: #555555;
+    /* สีกรอบอ่อนกว่า */
+    --shadow-sm: 0 0 6px rgba(0, 255, 136, 0.2);
+    --shadow-bg: 0 2px 8px rgba(29, 29, 29, 0.3);
+
+    /* Spacing */
+    --space-xxs: 0px;
+    --space-xs: 4px;
+    --space-sm: 8px;
+    --space-md: 16px;
+    --space-lg: 24px;
+    --space-nv-w: 0.5px;
+    --space-nv-h: 0.1px;
+
+
+}
+
+/* Global Styles */
+body {
+    font-family: var(--font-family);
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    border: #555555 solid 1px;
+}
+
+
+.hd {
+    display: flex;
+}
+
+.tab-ntv {
+    display: flex;
+    justify-content: space-between;
+    padding: var(--space-sm);
+    background-color: var(--color-bg-light);
+    /* border-radius: var(--border-radius); */
+    /* box-shadow: var(--shadow-sm); */
+    align-items: center;
+    /* width: 100%; */
+    height: 20px;
+}
+
+.tr-nt {
+    display: flex;
+
+}
+
+.nv {
+    width: 13px;
+    height: 13px;
+    margin: 0 0 0 6px;
+    border-radius: 100%;
+    background-color: var(--color-accent);
+}
+
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48;
+    font-size: 20px;
+    color: var(--color-text);
+    cursor: pointer;
+    margin-top: 8px;
+}
+
+.u-t-n {
+    background-color: var(--color-bt);
+    height: 20px;
+    padding: var(--space-xxs);
+    margin: var(--space-xxs);
+}
+
+.link-ntv {
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+    /* text-decoration: none; */
+    justify-content: center;
+    font-size: x-small;
+    /* margin-top: 5px; */
+
+}
+
+
+
+#mn {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 6px;
+    padding: 0;
+}
+
+.text {
+    /* display: flex; */
+    font-size: 14px;
+    margin: ;
+}
+
+.progress-bar {
+    width: 100%;
+    max-width: 400px;
+    margin: 16px auto;
+    font-family: monospace;
+}
+
+.progress-text {
+    color: #00ffe7;
+    font-size: 14px;
+    margin-bottom: 2px;
+    display: block;
+    padding-left: 6px;
+}
+
+.progress-bg {
+    background: #222;
+    border: 2px solid #00ffe7;
+    border-radius: 6px;
+    height: 28px;
+    position: relative;
+    overflow: hidden;
+}
+
+.progress-fill {
+    background: #00ffe722;
+    height: 100%;
+    width: 0;
+    transition: width 0.4s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #00ffe7;
+}
+
+hr {
+    border: none;
+    border-top: 2px dashed #888;
+    /* เส้นปะ */
+    /* หรือใช้ dotted แทน dashed ถ้าอยากได้เป็นจุด */
+    /* border-top: 1px dotted #888; */
+    background: none;
+    height: 4px;
+    width: 100%;
+    margin: 16px 0;
+}
